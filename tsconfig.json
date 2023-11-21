@@ -1,0 +1,34 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es2019",
+        "allowSyntheticDefaultImports": true,
+        "types": ["node"],
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "typeRoots": ["node_modules/@types", "src/types"],
+        "declaration": true,
+        "pretty": true,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "baseUrl": "./",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+
+        // improves computed types tooltips (shows all properties)
+        "noErrorTruncation": true
+
+        // stricter options for dev (do not push uncommented !)
+        // "strictNullChecks": true
+    },
+    "exclude": ["node_modules", "dist", "tests"],
+    "include": ["src"]
+}
+
